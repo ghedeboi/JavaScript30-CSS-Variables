@@ -1,0 +1,66 @@
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+    --bg-color: #193549;
+    --text-color: white;
+    --font-family: 'Helvetica Neue', sans-serif;
+    --font-size: 16px;
+    --font-color: #ffffff;
+  }
+  
+  body {
+    text-align: center;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  h2 {
+    color: var(--base);
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  .mode-toggle {
+    margin-bottom: 30px;
+  }
+  
+  input {
+    width: 100px;
+    margin: 10px;
+  }
+  
+  img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    transition: all 0.3s ease;
+  }
+  
+  textarea {
+    width: 60%;
+    height: 100px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--font-color);
+    background: var(--bg-color);
+    padding: var(--spacing);
+    border: 1px solid var(--text-color);
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .text-controls {
+    margin-top: 30px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }

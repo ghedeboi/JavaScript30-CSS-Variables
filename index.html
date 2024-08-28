@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Variables and JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+
+  <!-- Light/Dark Mode Toggle -->
+  <div class="mode-toggle">
+    <button id="toggleMode">Toggle Light/Dark Mode</button>
+  </div>
+
+  <!-- Image Controls -->
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Base Color:</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+  </div>
+
+  <img src="https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=kkZiaB9Q-GbY5gjf6WWURzEpLzNrpjZp_tn09GB21bI=">
+
+  <!-- Text Controls -->
+  <div class="text-controls">
+    <label for="fontFamily">Font Family:</label>
+    <select id="fontFamily" name="font-family">
+      <option value="'Helvetica Neue', sans-serif">Helvetica Neue</option>
+      <option value="'Times New Roman', serif">Times New Roman</option>
+      <option value="Arial, sans-serif">Arial</option>
+      <option value="'Courier New', monospace">Courier New</option>
+    </select>
+
+    <label for="fontSize">Font Size:</label>
+    <input id="fontSize" type="range" name="font-size" min="10" max="40" value="16" data-sizing="px">
+
+    <label for="fontColor">Font Color:</label>
+    <input id="fontColor" type="color" name="font-color" value="#ffffff">
+  </div>
+
+  <!-- Textarea for Dynamic Text -->
+  <textarea id="textArea">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</textarea>
+
+  <script src="script.js"></script>
+</body>
+</html>
